@@ -4,3 +4,38 @@ COLLECTION
 CLEANING
 1. Inittal cleaning (remove unwanted columns)
 2. EDA(understand raw data)
+   (feature_summary.xlsx)-extracted the (Data Type, Feature Type, Unique Values (if categorical),% of Null Values)
+
+   Observation
+   General Rules for Handling Missing Data
+
+    0–5% missing values → Safe to impute (mean, median, mode, ffill/bfill).
+
+    5–20% missing values → Still okay to impute, but check if the feature is important.
+
+    20–40% missing values → Imputation is possible, but risk of bias grows → consider dropping if feature isn’t critical.
+
+    40–70% missing values → Very hard to impute reliably → keep only if the feature is business-critical (else drop).
+
+    100-70% missing values → Almost always drop (too sparse, weak signal).
+     -------------------------------------------------------------------------------------------
+
+(IMP) What You Should “Understand” From EDA
+
+Data quality → Missing values, duplicates, errors.
+
+Feature nature → Numeric, categorical, skewness, outliers.
+
+Relationships → Which features are correlated with each other and the target.
+
+Distribution & balance → Target distribution, class imbalance, skewed variables.
+
+Next steps → Cleaning, transformation, feature engineering, scaling.
+
+
+==================================PREPROCESSING===========================================================================
+1.categorical feature
+2.contineous feature 
+3.encoding
+4.handleing outliers
+5.feature scaling
